@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class Dicegame
 {
@@ -7,6 +8,13 @@ class Dicegame
 	int num;
 	int sum = 0;
 	int JADGE = 7;
+	String name;
+
+	System.out.print("What is your name?\n> ");
+
+	name = new Scanner(System.in).nextLine();
+
+	System.out.println("Hello, " + name + "!");
 	
 	System.out.println("Rolling the dice...");
 
@@ -19,7 +27,7 @@ class Dicegame
 
 	System.out.println("Total value: " + sum);
 
-	if(sum > JADGE) System.out.println("You won!");
-	else System.out.println("You lost!");
+	if(sum > JADGE) System.out.println(name + " won!");
+	else System.out.println(name + " lost!");
     }
 }
