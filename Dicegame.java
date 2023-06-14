@@ -6,6 +6,7 @@ class Dicegame
     {
 	int num;
 	int sum = 0;
+	int JADGE = 7;
 	
 	System.out.println("Rolling the dice...");
 
@@ -17,5 +18,8 @@ class Dicegame
 	    }
 
 	System.out.println("Total value: " + sum);
+
+	if(sum > JADGE) System.out.println("You won!");
+	else System.out.println("You lost!");
     }
 }
